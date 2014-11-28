@@ -66,7 +66,7 @@ public class TopKII
 	public static void main(String[] args)
 	{
 		TopKII topKII = new TopKII();
-		int[] data = {7,5,4,3,2,1};
+		int[] data = {4,2,3,7,5,1};
 		topKII.getTopKII(data, 20);
 	}
 }
