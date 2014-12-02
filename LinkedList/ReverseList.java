@@ -10,6 +10,12 @@ class ListNode
 		this.val = val;
 		this.next = null;
 	}
+	ListNode add(int val)
+	{
+		ListNode node = new ListNode(val);
+		next = node;
+		return node;
+	}
 }
 public class ReverseList
 {
