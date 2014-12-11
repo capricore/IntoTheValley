@@ -27,7 +27,7 @@ public class DeleteDuplicates {
 		cur = cur.add(1);
 		cur = cur.add(1);
 		cur = cur.add(2);
-		cur = cur.add(3);
+		cur = cur.add(2);
 		cur = cur.add(3);
 		head = new DeleteDuplicates().deleteDuplicates(head);
 		while(head != null)
