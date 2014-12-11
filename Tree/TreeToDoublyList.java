@@ -13,6 +13,6 @@ class TreeNode
 }
 public class TreeToDoublyList {
 	public static void main(String[] args) {
-		
+		TreeNode headNode = new TreeNode(0);
 	}
 }
