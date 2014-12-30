@@ -34,7 +34,6 @@ public class BSTItorator implements Iterator<TreeNode> {
 		}
 	}
 
-	@Override
 	public void remove() {
 	}
 }
