@@ -25,11 +25,13 @@ public class IsMatch {
 			return (p.charAt(j) == '.' || s.charAt(i) == p.charAt(j)) && isMatch(s, p, ++i, ++j);
 		}
 		while (i < s.length() && (s.charAt(i) == p.charAt(j))) {
+			//跳过*字符，如果匹配到，返回true，否则，继续比较
 			if (isMatch(s, p, i, j+2)) {
 				return true;
 			}
 			i++;
 		}
+		//跳过*字符，方便检查s到头的情况
 		return isMatch(s, p, i, j+2);
 	}
 	
