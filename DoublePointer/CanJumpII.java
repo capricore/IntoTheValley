@@ -5,7 +5,7 @@ public class CanJumpII {
 	int canJump(int[] A)
 	{
 		int result = 0;
-		int last = 0, current = 0;
+		int last = 0, current = 0;//last pointer records the most distance of previous round.
 		for (int i = 0; i < A.length; i++) {
 			if (i > last) {
 				last = current;
