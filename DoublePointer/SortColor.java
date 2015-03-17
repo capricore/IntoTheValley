@@ -23,5 +23,8 @@ public class SortColor {
 	public static void main(String[] args) {
 		int A[] = {2,1,0,2,0};
 		A = new SortColor().sortColor(A);
+		for (int i : A) {
+			System.out.println(i);
+		}
 	}
 }
