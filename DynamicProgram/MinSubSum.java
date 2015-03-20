@@ -21,19 +21,9 @@ public class MinSubSum {
 	
 	public static void main(String[] args)
 	{
-//		MinSubSum minimumPathSum = new MinSubSum();
-//		int[][] grid = {{1,2,3},{4,5,6},{7,8,9}};
-//		System.out.println(minimumPathSum.minSubSum(grid));
-		
-		 String a = "Programming";  
-	        String b = new String("Programming");  
-	        String c = "Program" + "ming";  
-	          
-	        System.out.println(a == b);  
-	        System.out.println(a == c);  
-	        System.out.println(a.equals(b));  
-	        System.out.println(a.equals(c));  
-	        System.out.println(b.intern() == c.intern()); 
+		MinSubSum minimumPathSum = new MinSubSum();
+		int[][] grid = {{1,2,3},{4,5,6},{7,8,9}};
+		System.out.println(minimumPathSum.minSubSum(grid));
 	}
 
 	
