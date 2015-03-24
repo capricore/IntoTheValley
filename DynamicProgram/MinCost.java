@@ -2,7 +2,7 @@ package DynamicProgram;
 
 
 public class MinCost {
-	int minCost(int h, int[] color){
+	int minCost(int h, int[] color){				
 		int [][] cost = new int[h][color.length];
 		//dp[i][j] = min(dp[i-1][k]) + color[j]; 0 <= k < color.length, k!=j. 
 		//dp[i][j] represents number i+1 house which pains the number j+1 color.
