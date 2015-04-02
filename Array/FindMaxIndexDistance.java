@@ -37,7 +37,7 @@ public class FindMaxIndexDistance
 	public static void main(String[] args)
 	{
 		FindMaxIndexDistance findMaxIndexDistance = new FindMaxIndexDistance();
-		int[] A = {5,3,4,1,1,4,0};
+		int[] A = {0,1,2,3,4,8,0};
 		System.out.println(findMaxIndexDistance.maxIndexDistance(A));
 	}
 }

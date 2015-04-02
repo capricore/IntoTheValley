@@ -30,7 +30,7 @@ public class FirstMissingPositive
 	
 	public static void main(String[] args)
 	{
-		int[] A = {5,3,-1,1};
+		int[] A = {5,3,2,1};
 		System.out.println(new FirstMissingPositive().firstMissingPositive(A));
 	}
 }
