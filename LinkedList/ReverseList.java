@@ -1,6 +1,7 @@
 package LinkedList;
 
 
+
 class ListNode
 {
 	int val; 
@@ -36,21 +37,33 @@ public class ReverseList
 	//非递归逆转链表
 	public ListNode reverse(ListNode head)
 	{
-		if (head == null)
-		{
-			return head;
+//		if (head == null)
+//		{
+//			return head;
+//		}
+//		ListNode p = head;
+//		ListNode q = head.next;
+//		p.next = null;//必须加上，否则新链表最后一个的next非空
+//		while (q != null)
+//		{
+//			ListNode temp = q.next;
+//			q.next = p;
+//			p = q;
+//			q = temp;
+//		}
+//		return p;
+		
+		ListNode dummy = new ListNode(0);
+		dummy.next = head;
+		ListNode cur = head.next;
+		head.next = null;
+		while (cur != null) {
+			ListNode next = cur.next;
+			cur.next = dummy.next;
+			dummy.next = cur;
+			cur = next;
 		}
-		ListNode p = head;
-		ListNode q = head.next;
-		p.next = null;//必须加上，否则新链表最后一个的next非空
-		while (q != null)
-		{
-			ListNode temp = q.next;
-			q.next = p;
-			p = q;
-			q = temp;
-		}
-		return p;
+		return dummy.next;
 	}
 	
 	public static void main(String[] args)

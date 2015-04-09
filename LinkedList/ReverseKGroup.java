@@ -18,7 +18,7 @@ public class ReverseKGroup
 			if (count % k == 0)
 			{
 				pre = reverse(pre,cur.next);
-				cur = pre;
+				cur = pre.next;
 			}else {
 				cur = cur.next;
 			}
@@ -37,7 +37,7 @@ public class ReverseKGroup
 			head.next = cur;
 			cur = last.next;
 		}
-		return last.next;
+		return last;
 	}
 	
 	public static void main(String[] args)
@@ -48,7 +48,7 @@ public class ReverseKGroup
 		cur = cur.add(3);
 		cur = cur.add(4);
 		cur = cur.add(5);
-		head = new ReverseKGroup().reverseKGroup(head, 2);
+		head = new ReverseKGroup().reverseKGroup(head, 3);
 		while(head != null)
 		{
 			System.out.println(head.val);

@@ -25,7 +25,7 @@ public class FindMaxRectangle {
 	}
 	
 	public static void main(String[] args) {
-		int[] A = {3,3,5,6,2,1};
+		int[] A = {2,1,5,6,2,3};
 		System.out.println(new FindMaxRectangle().findMaxRectangle(A));
 	}
 }

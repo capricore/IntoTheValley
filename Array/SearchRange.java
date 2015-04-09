@@ -32,7 +32,7 @@ public class SearchRange {
 	}
 	
 	public static void main(String[] args) {
-		int[] A = {1,3,4,4,5};
+		int[] A = {1,3,3,4,5};
 		System.out.println(Arrays.toString(new SearchRange().searchRange(A, 4)));
 	}
 }
