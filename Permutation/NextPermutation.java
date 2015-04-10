@@ -3,6 +3,7 @@ package Permutation;
 import java.util.Arrays;
 
 public class NextPermutation {
+	@SuppressWarnings("unused")
 	void nextPermutation(int[] A){
 		int  pivot = -1;//record the index of the last decreasing turning point
 		for (int i = A.length-1; i >= 0; i--) {
