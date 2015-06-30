@@ -36,4 +36,11 @@ public class RecoverTree {
 		pre = root;
 		recoverTree(root.right, n1, n2, pre);
 	}
+	
+	public static void main(String[] args) {
+		TreeNode root = new TreeNode(3);
+		root.left = new TreeNode(4);
+		root.right = new TreeNode(1);
+		new RecoverTree().recoverTree(root);
+	}
 }
